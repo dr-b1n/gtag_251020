@@ -17,11 +17,23 @@
     <title>GA4_gtag</title>
 </head>
 <body>
+    <!-- 검색을 하기 위한 영역-->
     <h1> 검색 테스트 페이지 </h1>
     <div>
         <input id="searchInput" type="text" placeholder="검색어를 입력하세요">
         <button onclick = "handleSearch()">검색</button>
     </div>
+    <div class="product">
+        <!-- 상품뷰 영역 -->
+        <h2>무선 이어폰</h2>
+        <img src="https://sitem.ssgcdn.com/45/48/57/item/1000568574845_i1_750.jpg" alt="accessory">
+        <p> 가격 : 355,800원 </p>
+            <button onclick = "viewItem()"> 상품상세보기 </button>
+            <button onclick = "addToCart()"> 장바구니 담기 </button>
+            <button onclick = "purchase()"> 구매하기 </button>
+        </button>
+    </div>
+    
     <script>
         const searchInput = document.getElementById('searchInput');
         const searchButton = document.getElementById('searchButton');
